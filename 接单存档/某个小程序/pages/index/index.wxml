@@ -1,0 +1,12 @@
+<!--pages/index/index.wxml-->
+<!-- <navigator url="/pages/qndxx/qndxx">青年大学习</navigator> -->
+<!-- 在最前部加上斜杠 -->
+<!-- 块级元素，默认换行 -->
+<!-- 也可跳转另外的小程序页面 -->
+<!-- 不能跳转tabbar页面（index image ） -->
+
+<button  plain bindtap="gotoPage" style="position: relative; left: -2rpx; top: 84rpx; width: 680rpx; height: 78rpx; display: block; box-sizing: border-box">青年大学习</button>
+<button plain bindtap="gotoPage_" style="position: relative; left: -2rpx; top: 84rpx; width: 676rpx; height: 74rpx; display: block; box-sizing: border-box">党课学习</button>
+<button plain style="position: relative; left: -1rpx; top: 84rpx; width: 672rpx; height: 74rpx; display: block; box-sizing: border-box">待定</button>
+<button plain style="position: relative; left: -1rpx; top: 84rpx; width: 668rpx; height: 74rpx; display: block; box-sizing: border-box">待定</button>
+<button type="warn" style="position: relative; left: -2rpx; top: 680rpx; width: 360rpx; height: 103rpx; display: block; box-sizing: border-box">创建任务</button>

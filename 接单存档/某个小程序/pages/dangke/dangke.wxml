@@ -1,0 +1,4 @@
+<view class="container">
+    <web-view src="https://www.12371.cn/special/dk/">
+    </web-view>
+</view>

@@ -1,0 +1,46 @@
+<!-- <button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+获取授权
+</button> -->
+
+<block wx:if="{{!isShow}}">
+    <!-- 此处存有官方bug，wxss中修改的无法应用 -->
+    <button style="width:800rpx" bindtap="getUserInfo"><text class='text'>
+                                                    
+        点击获取用户信息</text></button>
+</block>
+
+<block wx:else>
+    <!-- <view>
+        <image src="{{userinfo.avatarUrl}}"></image>
+        <view>{{userinfo.nickName}}</view>
+    </view> -->
+    <view class="user_info_wrap">
+        <view class="user_img_wrap">
+            <image class="user_bg" src="{{userinfo.avatarUrl}}">
+            </image>
+            <view class="user_info">
+                <image class="user_icon" src="{{userinfo.avatarUrl}}"> </image>
+                <view class="user_name">
+                    {{userinfo.nickName}}
+                </view>
+            </view>
+        </view>
+    </view>
+</block>
+
+
+<button size="default" open-type="feedback"
+    style="position: relative; left: -3rpx; top: 127rpx; width: 746rpx; height: 76rpx; display: block; box-sizing: border-box"
+    type="primary" plain>问题反馈</button>
+
+<button open-type="share" type="primary" plain
+    style="position: relative; left: -6rpx; top: 444rpx; width: 178rpx; height: 80rpx; display: block; box-sizing: border-box">分享</button>
+
+<button open-type="contact" type="primary" plain
+    style="position: relative; left: -5rpx; top: 47rpx; width: 742rpx; height: 76rpx; display: block; box-sizing: border-box">人工客服</button>
+
+<button open-type="openSetting" type="primary" plain
+    style="position: relative; left: -4rpx; top: 47rpx; width: 742rpx; height: 76rpx; display: block; box-sizing: border-box">权限管理</button>
+
+<button type="primary" plain bindtap="gotoPage"
+    style="position: relative; left: -6rpx; top: 46rpx; width: 742rpx; height: 76rpx; display: block; box-sizing: border-box">开发人员</button>

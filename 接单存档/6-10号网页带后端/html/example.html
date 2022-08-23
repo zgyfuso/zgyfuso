@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人网站</title>
+  <link rel="stylesheet" href="../assets/css/amazeui.css" />
+  <link rel="stylesheet" href="../assets/css/common.min.css" />
+  <link rel="stylesheet" href="../assets/css/example.min.css" />
+</head>
+<body>
+  <div class="layout">
+    <!--===========layout-header================-->
+    <div class="layout-header am-hide-sm-only">
+      <!--topbar start-->
+      <div class="topbar">
+        <div class="container">
+          <div class="am-g">
+            <div class="am-u-md-3">
+            </div>
+            <div class="am-u-md-9">
+              <div class="topbar-right am-text-right am-fr">
+                <a href="./login.html">登录</a>
+                <a href="./register.html">注册</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--topbar end-->
+
+      <div class="header-box" data-am-sticky>
+        <!--header start-->
+          <div class="container">
+            <div class="header">
+              <div class="am-g">
+                <div class="am-u-lg-2 am-u-sm-12">
+                  <div class="logo">
+                    <a href=""><img src="assets/images/logo.png" alt="" /></a>
+                  </div>
+                </div>
+                <div class="am-u-md-10">
+                  <div class="header-right am-fr">
+                    <div class="header-contact">
+                      <div class="header_contacts--item">
+                          <div class="contact_mini">
+                              <i style="color:#7c6aa6" class="contact-icon am-icon-envelope-o"></i>
+                              <strong>shmilylovedd@foxmail.com</strong>
+                              <span>欢迎你的来信！</span>
+                          </div>
+                      </div>
+                      <div class="header_contacts--item">
+                          <div class="contact_mini"><i style="color:#7c6aa6" class="contact-icon am-icon-map-marker">
+                          </i><strong>贵州仁怀,</strong>
+                              <span>惠邦国际城</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--header end-->
+
+
+        <!--nav start-->
+        <div class="nav-contain">
+          <div class="nav-inner">
+            <ul class="am-nav am-nav-pills am-nav-justify">
+              <li class=""><a href="../index.html">首页</a></li>
+              <li><a href="./example.html">电影专区</a></li>
+              <li><a href="./solution.html">文学专区</a></li>
+              <li>
+                <a href="./news.html">游戏专区</a>
+                <!-- sub-menu start-->
+                <ul class="sub-menu">
+                    <li class="menu-item"><a href="./news-content.html">游戏动态</a></li>
+                </ul>
+                <!-- sub-menu end-->
+              </li>
+              <li><a href="./about.html">关于作者</a></li>
+              <li><a href="./contact.html">联系作者</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--nav end-->
+      </div>
+
+    </div>
+    <!--mobile header start-->
+    <div class="m-header">
+      <div class="am-g am-show-sm-only">
+        <div class="am-u-sm-2">
+          <div class="menu-bars">
+            <a href="#doc-oc-demo1" data-am-offcanvas="{effect: 'push'}"><i class="am-menu-toggle-icon am-icon-bars"></i></a>
+            <!-- 侧边栏内容 -->
+            <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas >
+            <a href="javascript: void(0)" class="am-menu-toggle"></a>
+
+            <div class="am-offcanvas" >
+              <div class="am-offcanvas-bar">
+              <ul class="am-menu-nav am-avg-sm-1">
+                  <li><a href="./index.html" class="" >首页</a></li>
+                  <li class=""><a href="html/example.html" class="" >电影专区</a></li>
+                  <li class=""><a href="html/solution.html" class="" >文学专区</a></li>
+                  <li class="am-parent">
+                    <a href="html/news.html" class="" >游戏专区</a>
+                      <ul class="am-menu-sub am-collapse  ">
+                          <li class="">
+                            <a href="html/news-content.html" class="" >游戏动态</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class=""><a href="html/about.html" class="" >关于作者</a></li>
+                  <li class=""><a href="html/contact.html" class="" >联系作者</a></li>
+                  <li class=""><a href="html/login.html" class="" >登录</a></li>
+                  <li class=""><a href="html/register.html" class="" >注册</a></li>
+              </ul>
+
+              </div>
+            </div>
+            </nav>
+          </div>
+        </div>
+        <div class="am-u-sm-5 am-u-end">
+          <div class="m-logo">
+            <a href=""><img src="assets/images/logo.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <!--mobile header end-->
+    </div>
+
+    <!--===========layout-container================-->
+    <div class="layout-container">
+      <div class="page-header">
+        <div class="am-container">
+          <h1 class="page-header-title">电影专区</h1>
+        </div>
+      </div>
+
+      <div class="breadcrumb-box">
+        <div class="am-container">
+          <ol class="am-breadcrumb">
+            <li><a href="../index.html">首页</a></li>
+            <li class="am-active">电影专区</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="section--header">
+					<h2 class="section--title">沉浸在这 光影世界</h2>
+					<p class="section--description">
+                        在电影中穿过时间、空间，通过光影去欣赏感受世界的另一面，将生命的纬度无限拉长。
+						<br>我将永远热爱电影。
+					</p>
+				</div>
+
+        <div class="example-container">
+          <div class="am-tabs" data-am-tabs>
+            <ul class="am-tabs-nav am-nav am-nav-tabs am-g">
+              <li class="am-active am-u-md-2"><a href="#tab-4-1"><i class="am-icon-map-o"></i>最爱列表</a></li>
+              <li class="am-u-md-2"><a href="#tab-4-2"><i class="am-icon-scribd"></i>列表一</a></li>
+              <li class="am-u-md-2"><a href="#tab-4-3"><i class="am-icon-odnoklassniki"></i>列表二</a></li>
+              <li class="am-u-md-2"><a href="#tab-4-4"><i class="am-icon-building-o"></i>列表三</a></li>
+              <li class="am-u-md-2"><a href="#tab-4-5"><i class="am-icon-hand-scissors-o "></i>列表四</a></li>
+              <li class="am-u-md-2"><a href="#tab-4-6"><i class="am-icon-camera"></i>列表五</a></li>
+            </ul>
+            <div class="am-tabs-bd am-tabs-bd-ofv">
+              <div class="am-tab-panel am-active" id="tab-4-1">
+                 <div class="am-g">
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/dy.jpg');" class="example-item-bg"></a>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/dy2.jpg');" class="example-item-bg"></a>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/dy3.jpg');" class="example-item-bg"></a>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/dy4.jpg');" class="example-item-bg"></a>
+                   </div>
+                 </div>
+
+                 <div class="am-g">
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                 </div>
+
+                 <div class="am-g">
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                 </div>
+
+                 <div class="am-g">
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                   <div class="am-u-md-3">
+                     <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                    <img src="../assets/images/example/logo_hx_active.png" alt="">
+                     <span>了解更多></span>
+                   </div>
+                 </div>
+              </div>
+              <div class="am-tab-panel" id="tab-4-2">
+                <div class="am-g">
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                </div>
+
+                <div class="am-g">
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                </div>
+
+                <div class="am-g">
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                </div>
+              </div>
+              <div class="am-tab-panel" id="tab-4-3">
+                <div class="am-g">
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                </div>
+
+                <div class="am-g">
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="am-tab-panel" id="tab-4-4">
+                <div class="am-g">
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="am-tab-panel" id="tab-4-5">
+                <div class="am-g">
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="am-tab-panel" id="tab-4-6">
+                <div class="am-g">
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                  <div class="am-u-md-3">
+                    <a href="#" style="background-image: url('../assets/images/example/example1.jpg');" class="example-item-bg"></a>
+                   <img src="../assets/images/example/logo_hx_active.png" alt="">
+                    <span>了解更多></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--===========layout-footer================-->
+    <div class="layout-footer">
+    <div class="footer">
+      <div style="background-color:#383d61" class="footer--bg"></div>
+      <div class="footer--inner">
+        <div class="container">
+          <div class="footer_main">
+            <div class="am-g">
+              <div class="am-u-md-3 ">
+                <div class="footer_main--column">
+                  <strong class="footer_main--column_title">关于作者</strong>
+                  <div class="footer_about">
+                      <p class="footer_about--text">
+                        我是龚遥忆，就读于贵州财经大学商务学院计科系，接触并学习计算机已经有五年时间，在这期间曾先后参与过搭建网站与网站前端
+                        制作的项目。拥有不够丰富的工作经验但极其饱满的钻研热情。
+                      </p>
+                    </div>
+                </div>
+              </div>
+
+              <div class="am-u-md-3 ">
+                <div class="footer_main--column">
+                  <strong class="footer_main--column_title">浏览器</strong>
+                  <ul class="footer_navigation">
+                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Microsoft Edge 微软浏览器</a></li>
+                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Mozilla Firefox 火狐浏览器</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="am-u-md-3 ">
+                <div class="footer_main--column">
+                  <strong class="footer_main--column_title">技术支持</strong>
+                  <ul class="footer_navigation">
+                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">PyCharm</a></li>
+                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">CSDN大神博客</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="am-u-md-3 ">
+                <div class="footer_main--column">
+                  <strong class="footer_main--column_title">联系详情</strong>
+                  <ul class="footer_contact_info">
+                    <li class="footer_contact_info--item"><i class="am-icon-phone"></i>
+                      <span>联系号码：152 8611 0310</span></li>
+                    <li class="footer_contact_info--item"><i class="am-icon-envelope-o"></i>
+                      <span>shmilylovedd@foxmail.com</span></li>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/jquery-2.1.0.js" charset="utf-8"></script>
+  <script src="../assets/js/amazeui.js" charset="utf-8"></script>
+  <script src="../assets/js/common.js" charset="utf-8"></script>
+</body>
+</html>

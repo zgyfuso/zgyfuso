@@ -1,0 +1,36 @@
+<!--pages/function/function.wxml-->
+<!-- <text user-select>这里是功能界面，所有功能都在里面哦</text> -->
+<view class="message_search">
+    <!-- 搜索框 -->
+    <searchinput></searchinput>
+</view>
+
+
+<!-- 替换url代码存于test。txt文档中，将以下代码块注释后放置此处即可 -->
+
+<!-- 轮播图 -->
+<view class="index_swiper">
+    <!-- 播放属性 -->
+    <swiper autoplay indicator-dots circular>
+        <swiper-item wx:for="{{swiperList}}"
+            wx:key="goods_id">
+            <navigator>
+                <!-- 此处修改宽高 -->
+                <image mode="widthFix"  src="{{item.image_src}}">
+                </image>
+            </navigator>
+        </swiper-item>
+    </swiper>
+</view>
+
+
+
+<!-- <view >tabs="{{tabs}}"</view> -->
+<Tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+<block wx:if="{{tabs[0].isActive}}">校内咨询内容</block>
+<block wx:if="{{tabs[1].isActive}}">时事热点内容</block>
+
+</Tabs>
+ 
+
+

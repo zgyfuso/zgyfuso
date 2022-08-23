@@ -1,0 +1,35 @@
+.user_info_wrap {
+    height: 45vh;
+    background-color: var(--themeColor);
+    overflow: hidden;
+
+    .user_img_wrap {
+        position: relative;
+
+        .user_bg {
+            height: 45vh;
+            //模糊
+            width: 800rpx;
+            filter: blur(10rpx);
+        }
+
+        .user_info {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 30%;
+            text-align: center;
+
+            .user_icon {
+                width: 150rpx;
+                height: 150rpx;
+                border-radius: 50%;
+            }
+
+            .user_name {
+                color: #fff;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<!--components/Tabs/Tabs.wxml-->
+<!-- <text>components/Tabs/Tabs.wxml</text> -->
+<view class="tabs">
+    <view class="tabs_title ">
+        <!-- <view class="tabs_item ">校内资讯</view>
+        <view class="tabs_item">时事热点</view> -->
+        <!-- 以下为优化代码 -->
+       <view
+        wx:for="{{tabs}}"
+        wx:key="id"
+        class="tabs_item {{item.isActive?'actives':''}}"
+        bindtap="handleItemtap"
+        data-index="{{index}}"
+       >
+       {{item.name}}
+       </view>
+    </view>
+    <view class="tabs_contents">
+    <slot>
+    
+    </slot>
+    </view>
+</view>

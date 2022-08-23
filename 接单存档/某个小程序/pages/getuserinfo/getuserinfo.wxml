@@ -1,0 +1,11 @@
+
+<block wx:if="{{!isShow}}">
+    <button bindtap="getUserInfo">获取用户信息</button>
+</block>
+
+<block wx:else>
+    <view>
+        <image src="{{userinfo.avatarUrl}}"></image>
+        <view>{{userinfo.nickName}}</view>
+    </view>
+</block>

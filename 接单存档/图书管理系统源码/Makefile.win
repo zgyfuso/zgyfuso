@@ -1,0 +1,43 @@
+# Project: 项目1
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = Append.o create.o CreateTxt.o ex_15.o Inquire.o Sale.o
+LINKOBJ  = Append.o create.o CreateTxt.o ex_15.o Inquire.o Sale.o
+LIBS     = -L"D:/software/devc++/Dev-Cpp/TDM-GCC-64/lib" -L"D:/software/devc++/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"D:/software/devc++/Dev-Cpp/TDM-GCC-64/include" -I"D:/software/devc++/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/software/devc++/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"D:/software/devc++/Dev-Cpp/TDM-GCC-64/include" -I"D:/software/devc++/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/software/devc++/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/software/devc++/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = 项目1.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+DEL      = D:\software\devc++\Dev-Cpp\DevCpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Append.o: Append.cpp
+	$(CPP) -c Append.cpp -o Append.o $(CXXFLAGS)
+
+create.o: create.cpp
+	$(CPP) -c create.cpp -o create.o $(CXXFLAGS)
+
+CreateTxt.o: CreateTxt.cpp
+	$(CPP) -c CreateTxt.cpp -o CreateTxt.o $(CXXFLAGS)
+
+ex_15.o: ex_15.cpp
+	$(CPP) -c ex_15.cpp -o ex_15.o $(CXXFLAGS)
+
+Inquire.o: Inquire.cpp
+	$(CPP) -c Inquire.cpp -o Inquire.o $(CXXFLAGS)
+
+Sale.o: Sale.cpp
+	$(CPP) -c Sale.cpp -o Sale.o $(CXXFLAGS)

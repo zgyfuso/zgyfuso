@@ -1,0 +1,25 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* 因为微信不存在通配符，故采用此方法 */
+page,view,text,swiper,siiper_item,image,navigator{
+  padding:"";
+  margin: "";
+  box-sizing: border-box;
+}
+/* 主题颜色 字体大小 */
+page{
+--themeColor:#E2492F;
+font-size:28rpx;
+}
+
+@import "./styles/iconfont.wxss";
+/* 全局引入新图标 */
+

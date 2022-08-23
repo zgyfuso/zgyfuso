@@ -1,0 +1,27 @@
+.tabs{}
+.tabs_title{
+    display: flex;
+    padding: 20rpx;
+    /* 间距 */
+}
+.tabs_item{
+   
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* 两种对齐方式 */
+}
+.actives
+{
+    color:#E2492F;
+    border-bottom:10rpx solid currentColor;
+}
+.actives_
+{
+    color: darkgrey;
+    border-top: 10rpx solid currentColor;
+}
+.tabs_contents{}
+
+/* 辣椒红#9B1B30    探戈菊#E2492F*/

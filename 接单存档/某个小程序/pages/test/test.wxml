@@ -1,0 +1,15 @@
+<input type="text" bindinput="handinput"/>
+<button bindtap="handletap" data-operation="{{1}}">+</button>
+<button bindtap="handletap" data-operation="{{-1}}">-</button>
+<view>{{num}}</view>
+
+<view hover-class="h.class">点击我试试</view>
+
+<text user-select>这个可以复制</text>
+<!-- selected已经被弃用 -->
+<text decode>\n这里测试空格 &nbsp; 空格在前面</text>
+<!-- 可以手动物理换行 -->
+<!-- 只要包含decode即可使用官方文档中的编码 -->
+
+<view>{{helloworld}}</view>
+

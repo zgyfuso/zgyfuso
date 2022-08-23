@@ -1,0 +1,19 @@
+swiper{
+    width: 100%;
+    height: 340rpx;
+    /* height: calc(100vw*352/1125); */
+}
+image{
+    width: 100%;
+}
+button{
+    width: max-content;
+    height: 200;
+}
+view{
+    color: var(--themeColor);
+}
+/* 此处是主题颜色代码 */
+page {
+    background-color: #edece8;
+  }

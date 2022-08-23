@@ -1,0 +1,11 @@
+<!--pages/qndxx/qndxx.wxml-->
+
+<view class="container">
+    <web-view src="http://news.cyol.com/gb/channels/vrGlAKDl/index.html">
+    </web-view>
+</view>
+
+<!--  注意的是web-view的src必须配置https协议的链接；
+<web-view>会默认铺满屏；
+个人小程序不支持<web-view>
+    微信小程序跳转到第三方网页需要获取第三方网站的同意，想要跳转到别人的网站，得获取别人的同意，把校验文件让别人放到网站服务器根目录下,当然这是不可能的 -->

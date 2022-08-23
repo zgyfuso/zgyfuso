@@ -1,0 +1,199 @@
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct node
+{
+	char array;
+	struct node* next;
+}linklist;
+
+linklist* init_linklist(void)
+{
+	linklist* a;
+	a = (linklist*)malloc(sizeof(linklist));
+	if (a != NULL)
+	{
+		a->next = NULL;
+	}
+
+	return a;
+
+}
+void insert_linklist(linklist* a, int i, char t)
+{
+	linklist* p, * q;
+	q = (linklist*)malloc(sizeof(linklist));
+	if (q != NULL)
+	{
+		q->array = t;//q在每一个函数模块中都是作为中间量取得操作地址，并且
+					 //在后续操作中始终使用该替代地址，
+
+	}
+	p = a;
+	for (int j = 1; j <= i - 1; j++)
+	{
+		p = p->next;//该循环是将指针移到需要链接的地址
+					//即末尾
+	}
+	if (q != NULL)
+	{
+		q->next = p->next;
+	}
+
+	p->next = q;
+}
+void output_linklist(linklist* a)
+{
+	linklist* p = a;
+	printf("\n\n输出单链表：");
+	while (p->next != NULL)
+	{
+
+		p = p->next;
+		printf("%3c", p->array);
+	}
+}
+void output_linklist_length(linklist* a)
+{
+	int flag = 0;
+	linklist* p;
+	p = (linklist*)malloc(sizeof(linklist));
+	p = a;
+	while (p != NULL)
+	{
+
+		p = p->next;
+		flag++;
+	}
+	printf("\n\n该链表的长度为%d", flag);
+}
+void output_linklist_three(linklist* a)
+{
+	int flag = 0;
+	linklist* p;
+	p = (linklist*)malloc(sizeof(linklist));
+	p = a;
+	while (p != NULL)
+	{
+		flag++;
+		p = p->next;
+		if (flag == 3)
+		{
+			printf("\n\n该链表的第三个元素是%c", p->array);
+		}
+
+
+	}
+	//free(p);
+}
+void output_linklist_a_location(linklist* a, char date)
+{
+	int flag = 0;
+	linklist* p;
+	p = (linklist*)malloc(sizeof(linklist));
+	p = a;
+	while (p != NULL)
+	{
+	
+		flag++;
+		p = p->next;//此处必须在条件判断之后
+		//为啥
+		//或者该条件移至此处，并且在判断内加入break
+		if (p->array == date)
+		{
+			printf("\n\nc字符出现的位置角标是%d", flag);
+			break;
+		}
+		
+	}
+
+}
+void insert_linklist_four(linklist* a,int i, char date)
+{
+	linklist* p, * q;
+	q = (linklist*)malloc(sizeof(linklist));
+	if (q != NULL)
+	{
+		q->array = date;//q在每一个函数模块中都是作为中间量取得操作地址，并且
+					 //在后续操作中始终使用该替代地址，
+
+	}
+	p = a;
+	for (int j = 1; j <= i - 1; j++)
+	{
+		p = p->next;//该循环是将指针移到需要链接的地址
+					//即末尾
+	}
+	if (q != NULL)
+	{
+		q->next = p->next;
+	}
+
+	p->next = q;
+	printf("\n\n插入成功\n");
+}
+void delete_linklist_three(linklist* a, int i)
+{
+	linklist* p, * q;
+	p = a;
+	for (int j = 1; j < i; j++)
+	{
+		p = p->next;//1.让p指向第i-1个元素节点
+	}
+	q = p->next;//2.让q指向第i个元素节点
+	p->next = q->next;//3.删除
+	free(q);//4.释放空间
+	printf("\n\n删除第三个元素成功\n");
+}
+int length(linklist* a)
+{
+	int flag = 0;
+	linklist* p;
+	p = (linklist*)malloc(sizeof(linklist));
+	p = a;
+	while (p != NULL)
+	{
+
+		p = p->next;
+		flag++;
+	}
+	return flag;
+}
+void let_go_off(linklist* a)
+{
+	linklist* pre = a, * p = a->next;
+	int flag = 0;
+	int max = length(a);
+	while (flag<max)
+	{
+		free(pre);//释放头节点
+
+		pre = p;//头节点移动到后继节点
+
+		p = pre->next;//同步向后移动一个
+		flag++;
+	}
+	free(pre);
+	printf("\n\nbinggo释放完成\n");
+}
+
+
+int main(void)
+{
+	char array[5] = { 'a','b','c','d','e' };
+	linklist* a = init_linklist();
+	for (int i = 0; i < 5; i++)
+	{
+		insert_linklist(a, i + 1, array[i]);
+	}
+	output_linklist(a);
+	output_linklist_length(a);
+	output_linklist_three(a);
+	output_linklist_a_location(a, 'c');
+	insert_linklist_four(a, 4, 'h');
+	output_linklist(a);
+	delete_linklist_three(a, 3);
+	output_linklist(a);
+	//let_go_off(a);        有缺陷
+	//output_linklist(a);
+	free(a);
+}

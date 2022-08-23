@@ -1,0 +1,26 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "commentTranslate.hover.enabled": false,
+    "externalConsole": true,
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "c:\\Users\\Lenovo\\Desktop\\mysql-connector-java-8.0.28\\mysql-connector-java-8.0.28.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java相关资源\\c3p0-0.9.5.5\\src\\c3p0-0.9.5.5-sources.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java相关资源\\mysql-connector-java-8.0.28\\mysql-connector-java-8.0.28.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java相关资源\\c3p0-0.9.5.5\\src\\mchange-commons-java-0.2.19-sources.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java相关资源\\c3p0-0.9.5.5\\lib\\mchange-commons-java-0.2.19.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java相关资源\\c3p0-0.9.5.5\\lib\\c3p0-oracle-thin-extras-0.9.5.5.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java correlation\\c3p0-0.9.5.5\\lib\\c3p0-0.9.5.5.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java correlation\\c3p0-0.9.5.5\\lib\\mchange-commons-java-0.2.19.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java correlation\\mysql-connector-java-8.0.28\\mysql-connector-java-8.0.28.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java correlation\\druid-1.2.9.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java correlation\\commons-dbutils-1.7\\commons-dbutils-1.7.jar"
+        ],
+        "exclude": [
+            "c:\\Users\\Lenovo\\Desktop\\php,java资源库\\TM\\sl(java)\\23\\TimeAttendance\\DB_MySQL\\mysql-connector-java-8.0.23.jar",
+            "c:\\Users\\Lenovo\\Desktop\\java相关资源\\c3p0-0.9.5.5\\lib\\c3p0-0.9.5.5.jar"
+        ]
+    },
+}

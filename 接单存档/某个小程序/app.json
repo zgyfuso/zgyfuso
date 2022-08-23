@@ -1,0 +1,46 @@
+{
+  "pages":[
+    
+    "pages/message/message",         
+    "pages/index/index", 
+    "pages/logs/logs",     
+    "pages/setting/setting",
+    "pages/qndxx/qndxx",
+    "pages/test/test",
+    "pages/Developer/Developer",
+    "pages/dangke/dangke"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E2492F",
+    "navigationBarTitleText": "微文理",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#E2492F"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "功能",
+      "iconPath": "my_icon/function.png",
+      "selectedIconPath": "my_icon/function_.png"
+    },
+    {
+      "pagePath": "pages/message/message",
+      "text": "消息",          
+      "iconPath": "my_icon/message.png",
+      "selectedIconPath": "my_icon/message_.png"
+    },
+    {
+      "pagePath": "pages/setting/setting",
+      "text": "设置",              
+      "iconPath": "my_icon/setting.png",
+      "selectedIconPath": "my_icon/setting_.png"
+    }
+    
+  ],
+    "color": "#E2492F",
+    "selectedColor": "#8a8a8a"
+  },
+  "sitemapLocation": "sitemap.json"
+}

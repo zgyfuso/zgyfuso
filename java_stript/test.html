@@ -1,0 +1,192 @@
+<html>
+
+<head>
+    <title>test</title>
+    <script src="outer.js"></script>
+    <script defer src="outer.js"></script>
+</head>
+
+<body>
+
+    <!-- <script>
+            document.write("hello world<br>");
+        </script> -->
+    <script>
+        say_hi("hhh<br>");
+    </script>
+    <button onclick="alert('你点到我了，傻逼')">click there</button>
+    <p>
+        <br>
+    </p>
+    <script>
+        var array_1 = "一";
+        document.write("1:", array_1, "<br>");
+    </script>
+
+    <script>
+        document.write("三：" + array_3);
+        document.write("我看康这句有没有跳过");
+    </script>
+
+    <script>
+        var array_2 = "二";
+        document.write("2:" + array_2 + "<br>");
+        var word = "aaa";
+    </script>
+
+    <script>
+        document.write("<br>试试看一:", undefined == null, "<br>");
+        document.write("试试看二:", undefined === null, "<br>");
+        // document.write("试试看三:");
+        document.write("<br>试试看三：", 2 == "2");//在自动类型转换后再判断是否相等，相较于===多了一个自动类型转换
+        document.write("<br>试试看四：", typeof (2 == "2"));
+        document.write("<br>试试看五：", word);
+        document.write("<br>试试看六：", typeof (2 + "2"));
+        document.write("<br>试试看七：", 3 / 2);
+        document.write("<br>试试看八：", parseInt(3 / 2));
+        var object = {
+            toString: function () {
+                document.write("<br>调用了该tostring函数");
+                return "1";
+            },
+            valueof: function () {
+                document.write("<br>调用该函数valueof函数");
+                return 1;
+            }
+        };
+
+        document.write("<br>", object == "2");
+        document.write("<br> z的ascii码为：", "z".charCodeAt());
+
+        function Word(temp) {
+            this.temp = temp;
+            return "<br>this is new";
+        }
+        document.write("<br>     ", Word("4"));
+        var word = new Word("4");
+        document.write("<br> ", word);
+        var list = {
+            first: "1",
+            second: "2",
+            third: function () {
+                document.write("<br> this is function of list");
+            }
+        }
+        document.write("<br> before:", JSON.stringify(list));
+        delete list.second;
+        document.write("<br>after:", JSON.stringify(list));
+        // document.write("<br>  ",list.third);
+        list.third();
+        document.write("<br> ", 123);
+        document.write("<br> ", (123).toString());
+        // list[add]="after_add";//add is indrfined
+        document.write("<br> ");
+        // document.write("<br> ",list.add());
+        function talk() {
+            document.write("<br> 你好傻逼");
+        }
+        talk();
+        // document.write("<br>",talk());
+        document.write("<br> ", (2022).toString(2));
+        document.write("<br> ", (0b10));
+        document.write("<br> ", (0b10).toString(2));
+        document.write("<br> ", .1 + .2);
+    </script>
+
+    <script>
+        var anonymity = function () {
+            document.write("<br> this is anonymity");
+        }
+        anonymity();
+
+        function test_length() {
+
+        }
+        document.write("<br>length is ", test_length.length);
+        //length 为函数的的参数个数
+
+    </script>
+
+    <script>
+        function find_max(a, b) {
+            // if(a<b)
+            // {
+            //     return b;
+            // }
+            // else return a;
+            var max = arguments[0];
+            for (i = 1; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+
+        document.write("<br> find_max result is ", find_max(2, 5));
+        document.write("<br> find_max result is ",find_max(2,5,8));
+
+
+    </script>
+
+    <script>
+        var Bei={
+            name:"小蓓",
+            sex:"女",
+            year:"17"
+        }
+        var xiao_bei=Object.create(Bei);
+        xiao_bei.favorite="椰汁";
+
+        document.write("<br> xiaobei: ",xiao_bei.name);
+        document.write("<br> xiaobei favorite is : ",xiao_bei.favorite);
+        
+    </script>
+
+    <script>
+        var test_it={
+            name:"just_so_so"
+        }
+        function change_it(object)
+        {
+            object.name="excellent";
+        }
+
+        change_it(test_it);
+        document.write("<br> when changed than ",JSON.stringify(test_it));
+
+        var clon_test_it;
+        clon_test_it=JSON.parse(JSON.stringify(test_it));
+        document.write("<br> when changed than ",JSON.stringify(clon_test_it));
+
+        
+
+    </script>
+
+    <!-- <script>
+        document.write("<br>,test windows");
+        confirm("十八岁以下禁止访问此网站");
+        alert("开门！！！ 查水表");
+        prompt("输入你的地址","地址：");
+        setTimeout(function(){
+            alert("这是慢慢来滴");
+        }, 2000);
+    </script> -->
+    
+    <br>
+    <button id="btn_click">点击此处</button>
+    <div id="log"></div>
+    <script>
+        var btn=document.getElementById("btn_click");
+        btn.addEventListener("click",function(event){
+            log("<br>",event.type," ",event);
+        });
+    </script>
+
+
+</body>
+<!-- <script>
+    document.getElementById('lll').innerText = 'hhhh<br>';
+</script> -->
+
+</html>
